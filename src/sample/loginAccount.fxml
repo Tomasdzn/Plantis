@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="241.0" prefWidth="360.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Label layoutX="26.0" layoutY="66.0" text="Name">
+         <font>
+            <Font name="Yu Gothic Regular" size="17.0" />
+         </font>
+      </Label>
+      <TextField layoutX="111.0" layoutY="64.0" prefHeight="25.0" prefWidth="226.0" />
+      <AnchorPane prefHeight="41.0" prefWidth="360.0" style="-fx-background-color: #121314;">
+         <children>
+            <Label layoutX="10.0" layoutY="5.0" text="New album" textFill="WHITE">
+               <font>
+                  <Font name="Yu Gothic UI Semibold" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label layoutX="16.0" layoutY="100.0" text="Location">
+         <font>
+            <Font name="Yu Gothic Regular" size="17.0" />
+         </font>
+      </Label>
+      <ComboBox layoutX="111.0" layoutY="98.0" prefHeight="25.0" prefWidth="226.0" />
+      <Button layoutX="277.0" layoutY="189.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="59.0" style="-fx-background-color: #C0EAAD;" text="Create">
+         <font>
+            <Font name="Yu Gothic Regular" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnCancel" layoutX="200.0" layoutY="189.0" mnemonicParsing="false" onAction="#closeNewAlb" prefHeight="30.0" prefWidth="68.0" text="Cancel">
+         <font>
+            <Font name="Yu Gothic Regular" size="13.0" />
+         </font>
+      </Button>
+      <Label layoutX="24.0" layoutY="140.0" text="Secret">
+         <font>
+            <Font name="Yu Gothic Regular" size="17.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="txtSecret" disable="true" layoutX="138.0" layoutY="138.0" prefHeight="25.0" prefWidth="198.0" />
+      <CheckBox fx:id="checkSecret" layoutX="111.0" layoutY="140.0" mnemonicParsing="false" onAction="#secretActivated" prefHeight="21.0" prefWidth="12.0" />
+      <Label fx:id="lblWarning" layoutX="26.0" layoutY="196.0" />
+   </children>
+</AnchorPane>
