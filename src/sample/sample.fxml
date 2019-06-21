@@ -84,7 +84,7 @@
                   <Reflection fraction="0.31" topOpacity="0.21" />
                </effect>
             </ImageView>
-            <Hyperlink layoutX="434.0" layoutY="301.0" text="Plantis GitHub" />
+            <Hyperlink fx:id="hyperGit" layoutX="434.0" layoutY="301.0" onAction="#navToGit" text="Plantis GitHub" />
             <Text layoutX="203.0" layoutY="111.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim venia." wrappingWidth="313.13671875">
                <font>
                   <Font name="Yu Gothic UI Light" size="20.0" />

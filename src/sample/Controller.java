@@ -7,6 +7,9 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
+import javafx.scene.control.Button;
+import javafx.scene.control.Label;
+import javafx.scene.control.MenuItem;
 import javafx.scene.image.Image;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.Pane;
@@ -14,7 +17,9 @@ import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 import javafx.util.Duration;
 
+import java.awt.*;
 import java.io.IOException;
+import java.net.URI;
 
 public class Controller {
     // Variables misc.
@@ -28,6 +33,8 @@ public class Controller {
     private Pane panel1;
     @FXML
     private AnchorPane anchorWelcome;
+    @FXML
+    private Hyperlink hyperGit;
 
     // Variables de StartNew
     @FXML
@@ -152,6 +159,17 @@ public class Controller {
         Scene scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
+    }
 
+    @FXML
+    private void navToGit(){
+        Desktop dk = Desktop.isDesktopSupported() ? Desktop.getDesktop() : null;
+        if(dk != null && dk.isSupported(Desktop.Action.BROWSE)){
+            try{
+                dk.browse(URI.create("https://github.com/Tomasdzn/Plantis.git"));
+            }catch(Exception e){
+                e.printStackTrace();
+            }
+        }
     }
 }
