@@ -39,7 +39,7 @@
           </Menu>
             <Menu fx:id="menuAcc1" mnemonicParsing="false" text="Account">
                <items>
-                  <MenuItem mnemonicParsing="false" text="Close" />
+                  <MenuItem fx:id="meLogin" mnemonicParsing="false" onAction="#loginTab" text="Login" />
                </items>
             </Menu>
           <Menu fx:id="menuEdd" mnemonicParsing="false" text="Edit">
