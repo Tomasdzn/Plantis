@@ -9,6 +9,8 @@ import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.control.Menu;
+import javafx.scene.control.MenuBar;
 import javafx.scene.control.MenuItem;
 import javafx.scene.image.Image;
 import javafx.scene.layout.AnchorPane;
@@ -27,6 +29,8 @@ public class Controller {
     private double yOffset = 0;
     @FXML
     private MenuItem meLogin;
+    @FXML
+    private MenuBar mainMenu;
 
     // Variables de Welcome
     @FXML
@@ -172,4 +176,5 @@ public class Controller {
             }
         }
     }
+
 }

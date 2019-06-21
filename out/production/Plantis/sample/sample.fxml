@@ -29,7 +29,7 @@
             </Label>
          </children>
       </AnchorPane>
-      <MenuBar layoutY="58.0" prefHeight="25.0" prefWidth="644.0">
+      <MenuBar fx:id="mainMenu" layoutY="58.0" onMouseClicked="#shadowEff" prefHeight="25.0" prefWidth="644.0">
         <menus>
           <Menu fx:id="menuOpt" mnemonicParsing="false" text="Options">
             <items>
