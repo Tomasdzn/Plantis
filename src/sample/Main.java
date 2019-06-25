@@ -7,6 +7,7 @@ import javafx.scene.Scene;
 import javafx.scene.image.Image;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
+import utils.User;
 
 public class Main extends Application {
     private double xOffset = 0;
@@ -27,7 +28,6 @@ public class Main extends Application {
             primaryStage.setX(event.getScreenX() - xOffset);
             primaryStage.setY(event.getScreenY() - yOffset);
         });
-
         primaryStage.setScene(new Scene(root));
         primaryStage.show();
 
